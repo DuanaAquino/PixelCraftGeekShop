@@ -2,8 +2,9 @@
     margin: 0;
     padding: 0;
     font-size: 18px;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    background-color: #1A1A1A;
 }
 
 .container{
@@ -16,14 +17,14 @@
     font-size: .7rem;
     font-weight: 700;
     color: #FFFFFF;
-    background-color: #005CFF;
+    background-color: #6C3EBE;
     text-align: center;
     padding:.5rem;
 }
 .deal{
-    font-size: .7rem;
-    background-color: #6220C1;
-    color: #FFFFFF;
+    font-size: .7rem;;
+    color: #3CD3FF;
+    background: none;
     border: 0;
     border-radius: .3rem;
     padding:.1rem .2rem;
@@ -32,6 +33,7 @@
     font-size: .7rem;
     font-style: italic;
     font-weight: 400;
+    background: none;
 }
 
 .searchMenu{
@@ -40,16 +42,20 @@
     justify-content: space-around;
     align-items: center;
 }
+.searchMenu > img{
+    max-width: 13rem;
+    margin-left: -2rem;
+}
 #searchForm{
     display: flex;
     flex-direction: row;
-    border: .1rem solid #DDDDDD;
+    border: .1rem solid #F2F2F2;
     border-radius: .8rem;
     padding: .1rem 1rem .1rem 1.3rem;
     margin: .95rem 14rem 1.2rem 3rem;
 }
 #searchButton{
-    background-color: white;
+    background-color: #1A1A1A;
     border: 0;
     padding-top: .2rem;
     cursor: pointer;
@@ -58,7 +64,7 @@
     width: 25.1rem;
     height: 2.2rem;
     border: 0;
-    color: #000000;
+    color: #F2F2F2;
     font-weight: 600;
 }
 #user{
@@ -68,16 +74,19 @@
     font-size: .7rem;
     font-weight: 600;
     line-height: .7rem;
-    padding-right: 1.33rem;
+    color: #F2F2F2;
+    margin-right: 2rem;
 }
 
 /*NAVIGATION MENU*/
 
 nav > ul{
+    margin: 2rem 0 2rem 0;
     list-style-type: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;    
+    color: #3CD3FF;
 }
 ul > .title{
     font-weight: 700;
@@ -85,64 +94,69 @@ ul > .title{
 nav > ul> li{
     font-size: .77rem;
     font-weight: 400;
+    color: #3CD3FF;
 }
-
+li > i{
+    margin-right: .5rem;
+}
 /*BANNER*/
 
 .banner{
-    background-color: #E7E7EA;
-    height: 28.33rem;
+    background-color: #1A1A1A;
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
     margin-bottom: 1.77rem;
 }
 .banner > img{
-    width: 38.05rem;
-    height: 28.33rem;
-    mix-blend-mode: darken;
-    margin-left: 9rem;
+    width: 100%;
     position: relative;
 }
 .bannerContainer{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 44.5rem;
+     position: absolute;
+     left: 28rem;
+     top: 11rem;
+     background: none;
 }
 h1{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 700;
     line-height: 100%;
     margin-top: 8rem;
-    font-family: 'Nunito';
+    font-family: 'Orbitron';
+    background: none;
+    color: #F2F2F2;
 }
 #thin{
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 300;
     line-height: 100%;
-    font-family: 'Nunito';
+    font-family: 'Orbitron';
+    background: none;
+    color: #F2F2F2;
 }
 .bannerContainer > p{
     font-size: 1.385rem;
     font-weight: 700;
     line-height: 100%;
-    color: #005CFF;
+    color: #3CD3FF;
     text-transform: uppercase;
     text-align: center;
+    background: none;
+    font-family: 'Orbitron';
 }
 #items{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 100%;
     padding-top: .66rem;
     letter-spacing: .38rem;
-    font-family: 'Nunito';
+    font-family: 'Orbitron';
 }
 #coupon{
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     padding: 1rem;
-    font-family: 'Nunito';
+    font-family: 'Orbitron';
 }
 
 /*PRODUCTS*/
@@ -152,6 +166,7 @@ h1{
     flex-direction: row;
     justify-content: space-between;
     padding: 3.55rem 0 1.05rem 0;
+    color: #6C3EBE;
 }
 .cardsTitle > #titleLarge{
     font-weight: 700;
@@ -160,13 +175,34 @@ h1{
 .cardsTitle > p{
     font-weight: 700;
     font-size: .77rem;
+    cursor: pointer;
 }
-.cards{
+.cardsContainer{
+    margin: 0 9rem 0 9rem;
     width: 12.22rem;
     padding: 0 0 2.77rem 0;
     display: flex;
     flex-direction: row;
     gap: .94rem;
+}
+.card-track {
+    display: flex;
+    flex-direction: row;
+    gap: 0.94rem;
+    overflow-x: scroll; 
+    scroll-behavior: smooth; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+.card-track::-webkit-scrollbar {
+    display: none;
+}
+.cards {
+    display: flex; 
+    align-items: center; 
+    gap: 0.94rem;
+    padding: 0 0 2.77rem 0;
+    overflow: hidden; 
 }
 .card{
     border: .05rem solid #DDDDDD;
@@ -178,20 +214,61 @@ h1{
     width: 11.33rem;
     height: 11.33rem;
 }
-#newIcon{
+.newIcon{
     position: absolute;
-    top: .44rem;
-    left: .44rem;
+    top: .3rem;
+    left: .3rem;
+    background: transparent;
+}
+.newIcon img {
+  width: 3rem;
+  height: auto;
+  background: transparent;
 }
 .arrowLeft{
-    position: absolute;
-    top: 10rem;
-    left: -1.15rem;
+    background: transparent;
+}
+.carousel-slide{
+    display: flex;
+    flex-direction: row;
+    gap: .94rem;
+}
+#carrousel1arrowLeft{
+    background: transparent !important;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    margin-right: -2rem;
+    z-index: 1000;
+    display: block;
+}
+#carrousel1arrowLeft:hover{
+    transform: translateY(-.2rem);
 }
 .arrowRight{
-    position: absolute;
-    top: 10rem;
-    left: 11rem;
+    background: transparent;
+}
+#carrousel1arrowRight{
+    background: transparent !important;
+    cursor: pointer;
+    margin-left: -2rem;
+    z-index: 1000;
+    display: block;
+}
+#carrousel1arrowRight:hover{
+    transform: translateY(-.2rem);
+}
+#carrousel2arrowRight{
+    cursor: pointer;
+    margin-left: -2rem;
+    z-index: 1000;
+    background: transparent;
+}
+#carrousel2arrowLeft{
+    cursor: pointer;
+    margin-right: -2rem;
+    z-index: 1000;
+    background: transparent;
 }
 .card > h3{
     font-weight: 400;
@@ -200,29 +277,142 @@ h1{
     width: 11.33rem;
     height: 2.16rem;
     text-align: center;
+    color: #F2F2F2;
+}
+.card > p{
+    font-size: .77rem;
+    color: #F2F2F2;
+}
+/* Navbar geral */
+.navbar {
+  font-size: .77rem;
+}
+
+/* UL principal da navbar */
+.navbar > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;           /* Só o menu principal é flex */
+  background-color: transparent;
+}
+
+/* Cada item da navbar */
+.navbar li {
+  position: relative;      /* Necessário para o submenu ficar posicionado */
+}
+
+/* Botões principais da navbar */
+.navbar a,
+.dropbtn {
+  display: inline-block;
+  font-size: .77rem;
+  padding: 1rem;
+  color: #3CD3FF;
+  text-decoration: none;
+  background: #1A1A1A;
+  border: none;
+  cursor: pointer;
+}
+
+/* Hover dos botões */
+.dropbtn:hover {
+  background: #333;
+  color: #6C3EBE;
+}
+
+/* Submenu (dropdown) escondido por padrão */
+.dropdown-content {
+  display: none;            /* Escondido inicialmente */
+  position: absolute;
+  top: 100%;                /* Logo abaixo do botão */
+  left: 0;
+  background: #1A1A1A;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mostrar submenu apenas quando passar o mouse */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilo dos links dentro do submenu */
+.dropdown-content li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #3CD3FF;
+  text-decoration: none;
+}
+
+/* Hover dentro do submenu */
+.dropdown-content li a:hover {
+  background: #333;
+  color: #6C3EBE;
+}
+.dropdown-content {
+  display: block;              /* mantém o elemento no fluxo */
+  opacity: 0;                  /* começa invisível */
+  visibility: hidden;          /* evita clique quando invisível */
+  transform: translateY(-10px);/* começa um pouco acima */
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1A1A1A;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+  z-index: 1000;
+}
+
+/* Links dentro do dropdown */
+.dropdown-content li a {
+  padding: 0.75rem 1rem;
+  display: block;
+  color: #3CD3FF;
+}
+
+.dropdown-content li a:hover {
+  background: #333;
+  color: #6C3EBE;
+}
+
+/* Quando o mouse passa, ativa a transição */
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* volta para posição original */
 }
 .prices{
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: #F2F2F2;
 }
 .price{
     display: flex;
     flex-direction: column;
     margin: .22rem 0 .22rem 0;
+    color: #F2F2F2;
 }
 .oldPrice{
     text-decoration: line-through;
     font-size: .66rem;
     font-weight: 400;
+    color: #F2F2F2;
 }
 .newPrice{
     font-size: .88rem;
     font-weight: 700;
+    color: #F2F2F2;
 }
 .discountButton{
-    background-color: #5EC0BE;
-    color: #FFFFFF;
+    background-color: #3CD3FF;
+    color: #F2F2F2;
     font-size: .61rem;
     font-weight: 700;
     line-height: .66rem;
@@ -234,17 +424,20 @@ h1{
     padding: .22rem .44rem;
     margin-left: .44rem;
     cursor: pointer;
+    color: #F2F2F2;
 }
 .financing{
     font-size: .66rem;
     font-weight: 400;
+    color: #F2F2F2;
 }
 .financingBold{
     font-size: .66rem;
     font-weight: 700;
+    color: #F2F2F2;
 }
 .shopButton{
-    background-color: #005CFF;
+    background-color: #6C3EBE;
     color: #FFFFFF;
     width: 11.33rem;
     height: 2.22rem;
@@ -254,7 +447,12 @@ h1{
     font-size: .88rem;
     font-weight: 700;
     line-height: 1.11rem;
-}   
+    cursor: pointer;
+}  
+.shopButton:hover{
+    background-color:#3CD3FF;
+    transform: translateY(-.2rem);
+} 
 
 /*MAIN
 -POST 01*/
@@ -262,30 +460,32 @@ h1{
 .post{
     display: flex;
     flex-direction: row;
-    padding: 2.55rem 12rem 0 12rem;
+    padding: 2.55rem 10rem 0 10rem;
 }
 .post > img{
-    width:36.2rem;
-    height:41.5rem;
+    width: 35rem;
 }
 .text{
     padding: 5.86rem 0 5.86rem 2rem;
 }
 .text > h3{
-    font-family: 'Nunito';
+    font-family: 'Orbitron';
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 1.4rem;
     letter-spacing: 0.04rem;
     text-transform: uppercase;
+    color: #3CD3FF;
+
 }
 .text > p{
-    font-family: 'Nunito';
+    font-family: 'Poppins';
     font-weight: 400;
     font-size: .8rem;
     line-height: 1.4rem;
     letter-spacing: 0.05rem;
     margin-top: 1.22rem;
+    color: #F2F2F2;
 }
 
 /*POST 02*/
@@ -293,25 +493,31 @@ h1{
     display: flex;
     flex-direction: row;
     padding: 2.27rem 12rem 2.77rem 12rem;
-    background-color: #DEDEDE;
+    background-color: #6C3EBE;
     margin: 3rem 0 2.55rem 0;
 }
 .post-02 > .list{
     padding: 6.75rem 2.72rem 5rem 0;
-    height: 40.45rem;
+    height: 40.45rem;  
+    background: transparent;
 }
 .list h3{
-    font-family: 'Nunito';
+    font-family: 'Orbitron';
     font-weight: 700;
     font-size: 1.6rem;
     line-height: 1.4rem;
     letter-spacing: 0.04rem;
     text-transform: uppercase;
     text-align: center;
+    background: transparent;
+    color: #3CD3FF;
+}
+.list > ul{
+    background: transparent;
 }
 .list > ul > li{
     list-style-type: none;
-    font-family: 'Nunito';
+    font-family: 'Poppins';
     font-weight: 400;
     font-size: .78rem;
     line-height: 1.4rem;
@@ -319,11 +525,17 @@ h1{
     display: flex;
     align-items: center;
     margin-top: 2rem;
+    background: transparent;
 }
 li > img{
     width:5rem;
     height:5rem; 
     margin-right: 1.11rem;
+    background: transparent;
+}
+.post-02 > .list > ul > li{
+    color: #F2F2F2;
+    background: transparent;
 }
 .post-02 > img{
     width: 36.22rem;
@@ -333,7 +545,7 @@ li > img{
 /*CONTACT*/
 
 .contact{
-    background-image: url(images/contact-img.svg);
+    background-image: url(images/banner3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 36.66rem;
@@ -341,16 +553,15 @@ li > img{
     margin-top: .78rem;
 }
 .contact > h3{
-    background-color: #005CFF;
-    color: #FFFFFF;
-    padding: 2rem 0;
-    font-family: Nunito;
+    color: #F2F2F2;
+    font-family: 'Orbitron';
     font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 1.4rem;
-    letter-spacing: 0;
+    font-size: 2.5rem;
+    margin: 2rem;
+    line-height: 3rem;
     text-align: center;
     vertical-align: middle;
+    background: none;
 }
 /*NEWSLETTER
 - TITLE*/
@@ -361,9 +572,10 @@ h4{
     letter-spacing: 0;
     text-align: center;
     margin-top: 3.55rem;
+    color: #F2F2F2;
 }
 h4 > #blue{
-    color: #005CFF;
+    color: #3CD3FF;
     font-weight: 700;
     font-size: 1.11rem;
     line-height: 1rem;
@@ -372,7 +584,7 @@ h4 > #blue{
 }
 /*FORM BOX*/
 #newsletter{
-    background-color: #DEDEDE;
+    background-color: #6C3EBE;
     margin: 1.33rem 0 2.22rem 0;
     display: flex;
     align-items: center;
@@ -381,34 +593,40 @@ h4 > #blue{
     border-radius: .44rem;
 }
 input[type="text"] {
-    border: 0;
+    border: .05rem solid #F2F2F2;
     border-radius: .44rem;
     padding: .83rem 0 .85rem 1.33rem;
     margin-right: 1.33rem;
-    outline: none;
+    outline: #F2F2F2;
+    background: none;
 }
 input[type="checkbox"] {
     width: .88rem;
     height: .88rem;
-    border: .05rem solid #DEDEDE;
+    border: .05rem solid #F2F2F2;
     border-radius: .22rem;
     border-width: .05rem;
+}
+.checkbox{
+    background: none;
 }
 .checkbox > h5{
     font-size: .66rem;
     font-weight: 700;
-    color: #656565;
+    color: #F2F2F2;
     display: inline;
     margin:.88rem 1.33rem .88rem .44rem;
+    background: none;
 }
 h5 > #politics{
     font-size: .66rem;
     font-weight: 700;
     text-decoration: underline;
     cursor: pointer;
+    background: none;
 }
 .baseButton {
-    background-color: #005CFF;
+    background-color: #3CD3FF;
     color: #FFFFFF;
     border: 0;
     border-radius:.44rem;
@@ -420,7 +638,6 @@ h5 > #politics{
 /*FOOTER*/
 
 .media{
-    background-color: #F5F5F5;
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -429,6 +646,10 @@ h5 > #politics{
 }
 .logoMedia{
     padding: 3.55rem 0 0 1.77rem;
+}
+.logoMedia > img{
+    width: 13rem;
+    margin-left: -1rem;
 }
 .media > ul{
     list-style: none;
@@ -439,11 +660,13 @@ h5 > #politics{
     line-height: 1rem;
     text-align: start;    
     padding-bottom: .61rem;
+    color: #F2F2F2;
 }
 .media > ul > li{
     font-weight: 400;
     font-size: .77rem;
     line-height: 1.5rem;
+    color: #F5F5F5;
 }
 .bold{
     font-weight: 700;
@@ -462,16 +685,22 @@ h5 > #politics{
     width: 10.77rem;
     align-items: center;
     margin-top: 2.22rem;
+    color: #3CD3FF;
 }
 .payments{
-    background-color: #F5F5F5;
+    background: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 25rem 2.55rem 25rem;
+    color: #F2F2F2;
 }
 
 /*COPYRIGHT*/
+.copyright{
+    background-color: #3CD3FF;
+    color: #F2F2F2;
+}
 
 #rights > p{
     text-align: center;
@@ -488,8 +717,7 @@ h5 > #politics{
     align-items: center;
 }
 #logo{
-    width: 3.18rem;
-    height: 0.56rem;
+    width: 3rem;
 }
 
 /*---------------------------------TELA MOBILE ----------------------------------------------------------------------*/
@@ -514,6 +742,7 @@ h5 > #politics{
         height: 2.44rem;
         padding: .22rem 2rem .22rem 2rem;
         text-align: center;
+        background-size: cover;
     }
     .searchMenu{
         display: flex;
@@ -548,16 +777,19 @@ h5 > #politics{
         display: flex;
         flex-direction: row;
         margin-bottom: 0;
+        position: relative;
     }
     .banner > img{
         height: 17rem;
-        mix-blend-mode: darken;  
-        margin-left: -15.5rem;
+        mix-blend-mode: darken; 
+        position: absolute;
+        right: .5rem;
    }
     .bannerContainer{
-        padding: 3.94rem 2.11rem 3.94rem 12rem;
+        padding: 3.94rem .5rem 3.94rem 11rem;
         height: 17rem;
         display: flex;
+        margin-right: 0;
         left: 0;
     }
     h1{
@@ -596,8 +828,8 @@ h5 > #politics{
         font-size: .77rem;
         text-decoration: underline;
     }
-    .cards{
-        margin: 0 .88rem;
+    .cardsContainer{
+        margin: 0 1rem 0 1rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -644,24 +876,22 @@ h5 > #politics{
     .post{
         display: flex;
         flex-direction: column;
-        margin: 3.11rem 0 2.66rem 0;
         padding: 0;
     }
     .post > img{
-        max-width: 100%;
-        height: auto;
+        width: 0rem;
     }
     .text{
         padding: 2.11rem 1.33rem 0 1.33rem;        
         margin: 0;
     }
     .text > h3{
-        font-family: 'Nunito';
+        font-family: 'Orbitron';
         font-weight: 700;
         font-size: 1.33rem;
     }
     .text > p{
-        font-family: 'Nunito';
+        font-family: 'Poppins';
         font-weight: 400;
         font-size: .7rem;
         margin-top: 1rem;
@@ -676,7 +906,7 @@ h5 > #politics{
         margin: 0;
         width: 100%;
         height:auto;
-        background-color: #DEDEDE;
+        background-color: #6C3EBE;
     }
     .post-02 > .list{
         padding: 0;
@@ -713,20 +943,17 @@ h5 > #politics{
     .contact{
         background-image: url(images/contact-mobile-img.svg);
         background-repeat: no-repeat;
-        margin-top: 0;        
-        width: 21.66rem;
+        margin-top: 0; 
+        background-size: cover;
         height: 24.94rem;
         padding-top: 10.47rem;
     }
     .contact > h3{
-        background-color: #005CFF;
-        color: #FFFFFF;
+        color: #F2F2F2;
         padding: 1rem 2rem;
         font-family: Nunito;
         font-weight: 600;
         font-size: .88rem;
-        line-height: 1.4rem;
-        letter-spacing: 0;
         text-align: center;
         vertical-align: middle;
     }
@@ -738,7 +965,7 @@ h5 > #politics{
         margin-top: 3.38rem;
     }
     h4 > #blue{
-        color: #005CFF;
+        color: #3cd3ff;
         font-size: .88rem;
         text-align: center;
         margin-top: 3.38rem;
@@ -746,14 +973,13 @@ h5 > #politics{
     /*FORM BOX*/
     #newsletter{
         background-color: #DEDEDE;
-        width: 19.88rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 2.11rem .88rem;
     }
     input[type="text"] {
-        width: 18.11rem;
+        width: 16rem;
         height: 2.66rem;
         margin: 0 .88rem .88rem .88rem;
         outline: none;
@@ -780,17 +1006,17 @@ h5 > #politics{
         cursor: pointer;
     }
     .baseButton {
-        background-color: #005CFF;
+        background-color: #3cd3ff;
         color: #FFFFFF;
-        width: 18.11rem
+        width: 16rem;
     }
     .baseButton:hover{
-        background-color: #0244b7;
+        background-color: #3cd3ff;
     }
     /*FOOTER*/
 
     .media{
-        background-color: #F5F5F5;
+        background-color: #F2F2F2;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -836,10 +1062,38 @@ h5 > #politics{
     .payments{
         background-color: #F5F5F5;
         display: grid;
-        
-        padding: 2.66rem 28.22rem;
+        grid-template-columns: repeat(9,1fr);
+        grid-template-rows: repeat(3,1fr);
+        justify-content: center;
+        padding: 2.66rem 2.8rem;
     }
-
+    #item1{
+        grid-area: 1/1;
+    }
+    #item2{
+        grid-area: 1/3;
+    }
+    #item3{
+        grid-area: 1/5;
+    }
+    #item4{
+        grid-area: 1/7;
+    }
+    #item5{
+        grid-area: 1/9;
+    }
+    #item6{
+        grid-area: 3/2;
+    }
+    #item7{
+        grid-area: 3/4;
+    }
+    #item8{
+        grid-area: 3/6;
+    }
+    #item9{
+        grid-area: 3/8;
+    }
     /*COPYRIGHT*/
 
     #rights > p{

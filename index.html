@@ -4,264 +4,355 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ce599b3a1e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
-    <title>AVANTI</title>
+    <title>PIXEL CRAFT | Geek Shop</title>
 </head>
 <body>
     <header>
-        <section><p class="frame">Ganhe  <span class="deal">R$10,00</span>  de desconto no seu primeiro pedido. Utilize o cupom <span class="coupon">DESCONTO10</span></p>
+        <section><p class="frame">Get <span class="deal">$10,00</span>  off your first order. Use the coupon <span class="coupon">DEAL10</span></p>
         </section>
         <section class="container searchMenu">
-                <img src="./images/avantiLogo.svg" text="Logo" alt="erro">
+                <img src="./images/LOGO-horizontal-noBG.png" text="Logo" alt="erro">
                 <form id="searchForm"> 
-                    <input type="text" name="busca" id="searchBar" placeholder="Digite aqui o que você procura">
+                    <input type="text" name="busca" id="searchBar" placeholder="Type here what you are looking for">
                     <button type="button" id="searchButton"><img src="./images/icons/magnifying-glass.svg" alt=""></button>
                 </form>
-                <img id="user" src="./images/icons/user.svg" text="user-icon" alt="erro">
-                <p>Olá,<br>
-                    Nome cliente!</p>
+                <img id="user" src="./images/icons/user.svg" text="user-icon" alt="error">
+                <p>Hello,<br>
+                    Customer's name!</p>
                 <img id="cart" src="./images/icons/icon-cart.svg" text="cart-icon" alt="erro">
         </section>      
     </header>
-    <nav class="container">
+    <nav class="navbar container">
         <ul>
-            <li><i class="fa-solid fa-bars"></i></li>
-            <li class="title">Todas as Categorias</li>
-            <li>Departamento</li>
-            <li>Departamento</li>
-            <li>Departamento</li>
-            <li>Departamento</li>
-            <li>Departamento</li>
-            <li>Departamento</li>
-            <li>Departamento</li>
-            <li>Departamento</li>
+            <!-- Menu All Categories -->
+                <li class="dropdown">
+                <i class="fa-solid fa-bars"></i>
+                <button class="dropbtn">All Categories ▾</button>
+                <ul class="dropdown-content">
+                    <li><a href="#">Clothes</a></li>
+                    <li><a href="#">Electronics</a></li>
+                    <li><a href="#">Figures & Collectibles</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Houseware</a></li>
+                    <li><a href="#">Tabletop</a></li>
+                </ul>
+                </li>
+            <!-- Menu Clothes -->
+                <li class="dropdown">
+                <button class="dropbtn">Clothes</button>
+                <ul class="dropdown-content">
+                    <li><a href="#">Shirts</a></li>
+                    <li><a href="#">Hoodies</a></li>
+                    <li><a href="#">Cosplay</a></li>
+                </ul>
+                </li>
+            <!-- Menu Electronics -->
+                <li class="dropdown">
+                <button class="dropbtn">Electronics</button>
+                <ul class="dropdown-content">
+                    <li><a href="#">Consoles</a></li>
+                    <li><a href="#">Headsets</a></li>
+                    <li><a href="#">Keyboards</a></li>
+                </ul>
+                </li>
+            <!-- Menu Figures -->
+                <li class="dropdown">
+                <button class="dropbtn">Figures & Collectibles</button>
+                <ul class="dropdown-content">
+                    <li><a href="#">Action Figures</a></li>
+                    <li><a href="#">Statues</a></li>
+                    <li><a href="#">Miniatures</a></li>
+                </ul>
+                </li>
+            <!-- Menu Accessories -->
+                <li class="dropdown">
+                <button class="dropbtn">Accessories</button>
+                <ul class="dropdown-content">
+                    <li><a href="#">Purses/Wallets</a></li>
+                    <li><a href="#">Lunch Boxes</a></li>
+                    <li><a href="#">Umbrellas</a></li>
+                </ul>
+                </li>
+            <!-- Menu Houseware -->
+                <li class="dropdown">
+                <button class="dropbtn">Houseware</button>
+                <ul class="dropdown-content">
+                    <li><a href="#">Mugs/Coasters</a></li>
+                    <li><a href="#">Throws</a></li>
+                    <li><a href="#">Wall Art</a></li>
+                </ul>
+                </li>
+            <!-- Menu Tabletop -->
+                <li class="dropdown">
+                <button class="dropbtn">Tabletop</button>
+                <ul class="dropdown-content">
+                    <li><a href="#">Art Kits</a></li>
+                    <li><a href="#">Board Games</a></li>
+                    <li><a href="#">Puzzles</a></li>
+                </ul>
+                </li>
         </ul>
     </nav>
     <main>
         <section class="banner">
-            <img src="./images/banner-img.svg" text="Banner" alt="erro">
+            <img src="./images/banner4.jpg" text="Banner" alt="erro">
             <div class="bannerContainer">
                 <h1 class="title">SUPER<span id="thin">SALE</span></h1> 
-                <p id="items">Itens selecionados com até</p> 
+                <p id="items">selected items with up to</p> 
                 <p id="coupon" >50%off</P>
             </div>
         </section>
         <section class="container cardsTitle">
-                <p id="titleLarge">Lançamentos</p>
-                <p>Ver mais</p>
+                <p id="titleLarge">New in</p>
+                <p>See more</p>
         </section>
         <section class="container cards" id="cards">
-            <div class="card">
-                <img src="./images/product-img.svg" text="product-img" alt="erro">
-                <div class="arrowLeft hide">
-                    <img src="./images/arrow.svg" alt="erro">
+            <img id="carrousel1arrowLeft" onclick="carrousel1ScrollLeft()" src="./images/arrow.svg" alt="Seta Esquerda">
+            
+            <div class="card-track" id="card-track1">
+                <div id="manapotion" class="card">
+                    <img src="./images/manapotion.png" text="product-img" alt="Mana Potion">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="error">
+                    </div> 
+                    <h3>Geek Candle “Mana Potion”</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 15.00</span>
+                            <span class="newPrice">$ 13.50</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div>
+                    <p class="financing">With a fresh blue mint scent</p>   
+                    <button class="shopButton">Add to Cart</button>
+                    </div>
+                <div id="darthheadphones" class="card">
+                    <img src="./images/portafone.png" text="product-img" alt="Darth Vader Headphones Support">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="">
+                    </div> 
+                    <h3>Headphone Stand Darth Vader</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 100.00</span>
+                            <span class="newPrice">$ 90.00</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div>
+                    <p class="financing">Hand-sculpted in resin</p>   
+                    <button class="shopButton">Add to Cart</button>
+                    </div>
+                <div id="pins" class="card">
+                    <img src="./images/broches.png" text="product-img" alt="Pins">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="error">
+                    </div> 
+                    <h3>Pixel Art Pins</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 2.00</span>
+                            <span class="newPrice">$ 1.80</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div>
+                    <p class="financing">Link, Kirby, and Mega Man</p>   
+                    <button class="shopButton">Add to Cart</button>
+                    </div>
+                <div id="manamug" class="card">
+                    <img src="./images/caneca.png" text="product-img" alt="Mana Mug">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="error">
+                    </div> 
+                    <h3>“Mana + Health” Mug</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 15.00</span>
+                            <span class="newPrice">$ 13.50</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div>
+                    <p class="financing">RPG games inspired mug</p>   
+                    <button class="shopButton">Add to Cart</button>
+                    </div>
+                <div id="pikachukeychain" class="card">
+                    <img src="./images/keychain.png" text="product-img" alt="Pikachu Keychain">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="error">
+                    </div> 
+                    <h3>Pixel Pokémon Keychain</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 3.00</span>
+                            <span class="newPrice">$ 1.70</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div>
+                    <p class="financing">Original Pikachu sprite</p>   
+                    <button class="shopButton">Add to Cart</button>
+                    </div>
+                <div id="clock" class="card">
+                    <img src="./images/relógio.png" text="product-img" alt="Zelda Clock">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="error">
+                    </div> 
+                    <h3>Pixelated Wall Clock</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 30.00</span>
+                            <span class="newPrice">$ 27.00</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div>
+                    <p class="financing">made of painted MDF</p>   
+                    <button class="shopButton">Add to Cart</button>
                 </div>
-                <div id="newIcon">
-                    <img src="./images/icons/new-icon.svg" alt="">
-                </div> 
-                <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-                <div class="prices">
-                    <p class="price"><span class="oldPrice">R$ 100,00</span>
-                        <span class="newPrice">R$ 79,90</span></p>
-                    <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
-                </div>
-                <p class="financing">Ou em até <span class="financingBold">10x de R$ 7,90</span></p>   
-                <button class="shopButton">Comprar</button>
             </div>
-            <div class="card hide">
-                <img src="./images/product-img.svg" text="product-img" alt="erro">
-                <div id="newIcon">
-                    <img src="./images/icons/new-icon.svg" alt="">
-                </div> 
-                <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-                <div class="prices">
-                    <p class="price"><span class="oldPrice">R$ 100,00</span>
-                        <span class="newPrice">R$ 79,90</span></p>
-                    <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
-                </div>
-                <p class="financing">Ou em até <span class="financingBold">10x de R$ 7,90</span></p>   
-                <button class="shopButton">Comprar</button>
-            </div>
-            <div class="card hide">
-                <img src="./images/product-img.svg" text="product-img" alt="erro">
-                <div id="newIcon">
-                    <img src="./images/icons/new-icon.svg" alt="">
-                </div> 
-                <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-                <div class="prices">
-                    <p class="price"><span class="oldPrice">R$ 100,00</span>
-                        <span class="newPrice">R$ 79,90</span></p>
-                    <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
-                </div>
-                <p class="financing">Ou em até <span class="financingBold">10x de R$ 7,90</span></p>   
-                <button class="shopButton">Comprar</button>
-            </div>
-            <div class="card hide">
-                <img src="./images/product-img.svg" text="product-img" alt="erro">
-                <div id="newIcon">
-                    <img src="./images/icons/new-icon.svg" alt="">
-                </div> 
-                <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-                <div class="prices">
-                    <p class="price"><span class="oldPrice">R$ 100,00</span>
-                        <span class="newPrice">R$ 79,90</span></p>
-                    <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
-                </div>
-                <p class="financing">Ou em até <span class="financingBold">10x de R$ 7,90</span></p>   
-                <button class="shopButton">Comprar</button>
-            </div>
-            <div class="card">
-                <img src="./images/product-img.svg" text="product-img" alt="erro">
-                <div class="arrowRight hide">
-                    <img src="./images/arrow-right.svg" alt="erro">
-                </div>
-                <div id="newIcon">
-                    <img src="./images/icons/new-icon.svg" alt="">
-                </div> 
-                <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-                <div class="prices">
-                    <p class="price"><span class="oldPrice">R$ 100,00</span>
-                        <span class="newPrice">R$ 79,90</span></p>
-                    <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
-                </div>
-                <p class="financing">Ou em até <span class="financingBold">10x de R$ 7,90</span></p>   
-                <button class="shopButton">Comprar</button>
-            </div>      
+            
+            <img id="carrousel1arrowRight" onclick="carrousel1ScrollRight()" src="./images/arrow-right.svg" alt="Seta Direita">
+
         </section>
+
         <article class="post">
-            <img src="./images/post-img.svg" text="post-01" alt="erro">
+            <img src="./images/figuras.png" text="post-01" alt="erro">
             <section class="text">
-                <h3>LOREM IPSUM</h3>
-                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
-                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>   
+                <h3>MINI FIGURES & COLLECTIBLES</h3>
+                <p>Bring your favorite characters off the screen and onto your shelf. Each PixelCraft Mini Figure is carefully crafted and hand-painted, capturing every quirky detail that makes gamers smile—whether it’s a classic hero, a mischievous villain, or a tiny creature companion.</p>
+                <p>Perfect for desk buddies, display cases, or as the ultimate gift for fellow geeks. Collect them all and let your shelf tell your story, one figure at a time.</p>   
             </section>
         </article>
         <article class="post-02">
             <section class="list">
-                <h3>LOREM IPSUM</h3>
+                <h3>GEEK CANDLES</h3>
             <ul>
-                <li><img src="./images/icons/icon-list.svg" text="icon-list" alt="erro">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</li>
-                <li><img src="./images/icons/icon-list.svg" text="icon-list" alt="erro">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</li>
-                <li><img src="./images/icons/icon-list.svg" text="icon-list" alt="erro">Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</li>
+                <li><img src="./images/icons/icon-list.svg" text="icon-list" alt="erro">Step into the heart of an enchanted woodland, where glowing mushrooms and whispering trees fill the air with a crisp blend of pine, eucalyptus, and a hint of sweet moss.</li>
+                <li><img src="./images/icons/icon-list.svg" text="icon-list" alt="erro">Mystic Cave combines earthy sandalwood, smoky amber, and a touch of cool mineral air—like hidden treasure waiting beyond the torchlight. A cozy yet adventurous scent for late-night quests.</li>
+                <li><img src="./images/icons/icon-list.svg" text="icon-list" alt="erro">Notes of cinnamon, clove, and smoldering cedarwood create a warm, powerful fragrance—perfect for boss battles or just keeping your room feeling legendary.</li>
             </ul>
             </section>
-            <img src="./images/post02-img.svg" text="post-02" alt="erro">
+            <img src="./images/velas.png" text="post-02" alt="erro">
         </article>
         <article class="post">
-            <img src="./images/post-img.svg" text="post-01" alt="erro">
+            <img src="./images/broches.png" text="post-01" alt="erro">
             <section class="text">
-                <h3>LOREM IPSUM</h3>
-                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
-                <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>   
+                <h3>GEEK PINS</h3>
+                <p>Wear your fandom with pride—one pixel at a time. Each PixelCraft Pin is handmade and painted with care, bringing retro characters and iconic symbols to life in bold, colorful detail.</p>
+                <p>From the heroic heart of Zelda to the cheerful charm of Kirby, these little treasures are the perfect way to level up your jacket, backpack, or lanyard. Collect them all and build your own geeky inventory IRL!</p>   
             </section>
         </article>
-        <section class="container cardsTitle hide">
-            <p id="titleLarge">Lançamentos</p>
-            <p>Ver mais</p>
+        <section class="container cardsTitle">
+            <p id="titleLarge">New in</p>
+            <p>See more</p>
         </section>
         <section class="container cards">
-            <div class="card hide">
-                <img src="./images/product-img.svg" text="product-img" alt="erro">
-                <div class="arrowLeft hide">
-                    <img src="./images/arrow.svg" alt="erro">
-                </div>
-                <div id="newIcon">
-                    <img src="./images/icons/new-icon.svg" alt="">
+            <img id="carrousel2arrowLeft" onclick="carrousel2ScrollLeft()" src="./images/arrow.svg" alt="Seta Esquerda">
+
+            <div class="card-track" id="card-track2">
+                <div id="joystick" class="card">
+                    <img src="./images/joystick.png" text="product-img" alt="SNES Joystick">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="error">
+                    </div> 
+                    <h3>Mini SNES Joystick in Crochet</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 20,00</span>
+                            <span class="newPrice">$ 18.00</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div> 
+                    <p class="financing">Handmade with recycled yarn</p>  
+                    <button class="shopButton">Add to Cart</button>
                 </div> 
-                <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-                <div class="prices">
-                    <p class="price"><span class="oldPrice">R$ 100,00</span>
-                        <span class="newPrice">R$ 79,90</span></p>
-                    <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                <div id="poster" class="card">
+                    <img src="./images/poster.png" text="product-img" alt="Poster Start">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="error">
+                    </div> 
+                    <h3>Poster A3 – “Press Start to Dream”</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 30.00</span>
+                            <span class="newPrice">$ 27.00</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div>
+                    <p class="financing">Exclusive artwork printed on matte photo paper</p>   
+                    <button class="shopButton">Add to Cart</button>
                 </div>
-                <p class="financing">Ou em até <span class="financingBold">10x de R$ 7,90</span></p>   
-                <button class="shopButton">Comprar</button>
+                <div id="diorama" class="card">
+                    <img src="./images/diorama.png" text="product-img" alt="Diorama">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="error">
+                    </div> 
+                    <h3>Geek Mini Diorama</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 200.00</span>
+                            <span class="newPrice">$ 180.00</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div>
+                    <p class="financing">Small display boxes featuring iconic pixel art game scenes</p>   
+                    <button class="shopButton">Add to Cart</button>
+                </div>
+                <div id="pokeball" class="card">
+                    <img src="./images/pokebola.png" text="product-img" alt="PokéBall Lamp">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="error">
+                    </div> 
+                    <h3>PokéBall Lamp</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 70.00</span>
+                            <span class="newPrice">$ 63.00</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div>
+                    <p class="financing">Handmade with resin and an internal LED light</p>   
+                    <button class="shopButton">Add to Cart</button>
+                </div>
+                <div id="frame" class="card">
+                    <img src="./images/quadro.png" text="product-img" alt="3D Frame">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="error">
+                    </div> 
+                    <h3>3D Frame “Level Up”</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 100.00</span>
+                            <span class="newPrice">$ 90.00</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div>
+                    <p class="financing">Wooden frame with layered paper cutouts</p>   
+                    <button class="shopButton">Add to Cart</button>
+                    </div>
+                <div id="sword" class="card">
+                    <img src="./images/espada.png" text="product-img" alt="Pixel Sword">
+                    <div class="newIcon">
+                        <img src="./images/icons/new-icon.png" alt="">
+                    </div> 
+                    <h3>Pixelated Wooden Sword</h3>
+                    <div class="prices">
+                        <p class="price"><span class="oldPrice">$ 150.00</span>
+                            <span class="newPrice">$ 135.00</span></p>
+                        <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
+                    </div>
+                    <p class="financing">inspired by the Minecraft sword</p>   
+                    <button class="shopButton">Add to Cart</button>
+                </div>
             </div>
-            <div class="card hide">
-                <img src="./images/product-img.svg" text="product-img" alt="erro">
-                <div id="newIcon">
-                    <img src="./images/icons/new-icon.svg" alt="">
-                </div> 
-                <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-                <div class="prices">
-                    <p class="price"><span class="oldPrice">R$ 100,00</span>
-                        <span class="newPrice">R$ 79,90</span></p>
-                    <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
-                </div>
-                <p class="financing">Ou em até <span class="financingBold">10x de R$ 7,90</span></p>   
-                <button class="shopButton">Comprar</button>
-            </div>
-            <div class="card hide">
-                <img src="./images/product-img.svg" text="product-img" alt="erro">
-                <div id="newIcon">
-                    <img src="./images/icons/new-icon.svg" alt="">
-                </div> 
-                <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-                <div class="prices">
-                    <p class="price"><span class="oldPrice">R$ 100,00</span>
-                        <span class="newPrice">R$ 79,90</span></p>
-                    <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
-                </div>
-                <p class="financing">Ou em até <span class="financingBold">10x de R$ 7,90</span></p>   
-                <button class="shopButton">Comprar</button>
-            </div>
-            <div class="card hide">
-                <img src="./images/product-img.svg" text="product-img" alt="erro">
-                <div id="newIcon">
-                    <img src="./images/icons/new-icon.svg" alt="">
-                </div> 
-                <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-                <div class="prices">
-                    <p class="price"><span class="oldPrice">R$ 100,00</span>
-                        <span class="newPrice">R$ 79,90</span></p>
-                    <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
-                </div>
-                <p class="financing">Ou em até <span class="financingBold">10x de R$ 7,90</span></p>   
-                <button class="shopButton">Comprar</button>
-            </div>
-            <div class="card hide">
-                <img src="./images/product-img.svg" text="product-img" alt="erro">
-                <div class="arrowRight hide">
-                    <img src="./images/arrow-right.svg" alt="erro">
-                </div>
-                <div id="newIcon">
-                    <img src="./images/icons/new-icon.svg" alt="">
-                </div> 
-                <h3>Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
-                <div class="prices">
-                    <p class="price"><span class="oldPrice">R$ 100,00</span>
-                        <span class="newPrice">R$ 79,90</span></p>
-                    <a href="https://www.nike.com.br/air-max-1-86-027221.html?cor=51"><button class="discountButton">10% OFF</button> </a> 
-                </div>
-                <p class="financing">Ou em até <span class="financingBold">10x de R$ 7,90</span></p>   
-                <button class="shopButton">Comprar</button>
-            </div>      
+            
+            <img id="carrousel2arrowRight" onclick="carrousel2ScrollRight()" src="./images/arrow-right.svg" alt="Seta Direita">
+
         </section>
         <section class="contact">
-            <h3>Entre em contato conosco e verifique a disponibilidade para sua região!</h3>
+            <h3>Handmade Treasures <br>for Geeky Souls!</h3>
         </section>
         <section class="container newsletter">
-            <h4>Cadastre-se na nossa <span id="blue">newsletter</span></h4>
+            <h4>Sign up for our <span id="blue">newsletter</span></h4>
             <form id="newsletter" action="">
-                <input type="text" placeholder="Digite seu nome">
-                <input type="text" placeholder="Digite seu e-mail">
+                <input type="text" placeholder="Type your name">
+                <input type="text" placeholder="Type your e-mail">
                 <div class="checkbox">
-                    <input type="checkbox"><h5>Estou de acordo com a <span id="politics">Política de Privacidade</span></h5>
+                    <input type="checkbox"><h5>I agree with the <span id="politics">Privacy Policy</span></h5>
                 </div>
-                <button class="baseButton">Cadastrar</button> 
+                <button class="baseButton">Register</button> 
             </form>
         </section>
 </main>
 <footer>
     <section class="media">
         <div class="logoMedia">
-            <img src="./images/avantiLogo.svg" text="Logo" alt="erro">
+            <img src="./images/LOGO-noBG.png" text="Logo" alt="erro">
             <div class="logos">
                 <img src="./images/icons/instagram.svg" text="instagram-icon" alt="erro">
                 <img src="./images/icons/facebook.svg" text="facebook-icon" alt="erro">
@@ -270,51 +361,53 @@
             </div>
         </div>
             <ul>
-                <li><h4>Institucional</h4></li>
-                <li>Sobre Nós</li>
-                <li>Nossas Lojas</li>
-                <li>Privacidade e Segurança</li>
-                <li>Termos e Condições</li>
+                <li><h4>Institutional</h4></li>
+                <li>About us</li>
+                <li>Our stores</li>
+                <li>Privacy and Security</li>
+                <li>Terms and Conditions</li>
             </ul>
             <ul>
-                <li><h4>Central de ajuda</h4></li>
-                <li>Fale Conosco</li>
-                <li>Frete e Entrega</li>
-                <li>Trocas e Devoluções</li>
-                <li>Formas de Pagamento</li>
+                <li><h4>Help Centre</h4></li>
+                <li>Contact Us</li>
+                <li>Shipping and Delivery</li>
+                <li>Exchanges and Returns</li>
+                <li>Payment Methods</li>
                 <li>FAQ</li>
             </ul>
             <ul>
-                <li><h4>Atendimento</h4></li>
-                <li><span class="bold">Telefone:</span> (00) 1234-5678</li>
-                <li><span class="bold">E-mail:</span> exemplo@exemplo.com.br</li>
-                <li><span class="bold">Horário de atendimento:</span></li>
-                <li><h5>Segunda a Sábado: 07h00 às 23h00</h5></li>
-                <li><h5>Domingos e Feriados:  07h00 às 21h00</h5></li>
+                <li><h4>Service</h4></li>
+                <li><span class="bold">Phone Number:</span> (604) 236-5678</li>
+                <li><span class="bold">E-mail:</span> contact@pixelcraft.com</li>
+                <li><span class="bold">Opening hours:</span></li>
+                <li><h5>Monday to Saturday: 7am to 11pm</h5></li>
+                <li><h5>Sundays and Holidays:  7am to 9pm</h5></li>
             </ul>
     </section>
     <section class="payments">
-            <img src="./images/icons/amex.svg" alt="">
-            <img src="./images/icons/mastercard.svg" alt="">
-            <img src="./images/icons/visa.svg" alt="">
-            <img src="./images/icons/hipercard.svg" alt="">
-            <img src="./images/icons/elo.svg" alt="">
-            <img src="./images/icons/maestro.svg" alt="">
-            <img src="./images/icons/paypal.svg" alt="">
-            <img src="./images/icons/pix.svg" alt="">
-            <img src="./images/icons/boleto.svg" alt="">
+            <img id="item1" src="./images/icons/amex.svg" alt="">
+            <img id="item2" src="./images/icons/mastercard.svg" alt="">
+            <img id="item3" src="./images/icons/visa.svg" alt="">
+            <img id="item4" src="./images/icons/hipercard.svg" alt="">
+            <img id="item5" src="./images/icons/elo.svg" alt="">
+            <img id="item6" src="./images/icons/maestro.svg" alt="">
+            <img id="item7" src="./images/icons/paypal.svg" alt="">
+            <img id="item8" src="./images/icons/pix.svg" alt="">
+            <img id="item9" src="./images/icons/boleto.svg" alt="">
     </section>
     <section class="copyright">
         <div id="rights">
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. </p>
+            <p>Everything on this site, from items to artwork and ideas, is a rare power-up: unique and protected! Copying without permission is like trying to cheat in a game. Not cool, and it can have consequences in the real world.<br>
+            <br>© 2025 PixelCraft. All rights reserved.</p>
         </div>
         <div id="partners">
             <img src="./images/icons/encrypt.svg" text="encrypt-icon" alt="erro">
             <img src="./images/icons/vtex.svg" text="vtex-icon" alt="erro">
-            <img id="logo" src="./images/avantiLogo.svg" text="logo-icon" alt="erro">
+            <img id="logo" src="./images/LOGO-noBG.png" text="logo-icon" alt="erro">
             <img src="./images/icons/vtex02.svg" text="vtex02-icon" alt="erro">
         </div>
     </section>
 </footer>
+<script src="./index.js"></script>
 </body>
 </html>

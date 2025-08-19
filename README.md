@@ -1,2 +1,2 @@
-# Pixel Craft Geek Artisan Shop
-e-commerce page created for a fictional Geek Online Store
+# Avanti-Innovation-Class
+e-commerce page created for Avanti's Internship selection program
