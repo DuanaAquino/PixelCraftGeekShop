@@ -1,0 +1,858 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 0 10rem;
+}
+
+/*HEADER*/
+
+.frame{
+    font-size: .7rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #005CFF;
+    text-align: center;
+    padding:.5rem;
+}
+.deal{
+    font-size: .7rem;
+    background-color: #6220C1;
+    color: #FFFFFF;
+    border: 0;
+    border-radius: .3rem;
+    padding:.1rem .2rem;
+}
+.coupon{
+    font-size: .7rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.searchMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#searchForm{
+    display: flex;
+    flex-direction: row;
+    border: .1rem solid #DDDDDD;
+    border-radius: .8rem;
+    padding: .1rem 1rem .1rem 1.3rem;
+    margin: .95rem 14rem 1.2rem 3rem;
+}
+#searchButton{
+    background-color: white;
+    border: 0;
+    padding-top: .2rem;
+    cursor: pointer;
+}
+#searchBar{
+    width: 25.1rem;
+    height: 2.2rem;
+    border: 0;
+    color: #000000;
+    font-weight: 600;
+}
+#user{
+    padding-right: .44rem;
+}
+.searchMenu > p{
+    font-size: .7rem;
+    font-weight: 600;
+    line-height: .7rem;
+    padding-right: 1.33rem;
+}
+
+/*NAVIGATION MENU*/
+
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+ul > .title{
+    font-weight: 700;
+}
+nav > ul> li{
+    font-size: .77rem;
+    font-weight: 400;
+}
+
+/*BANNER*/
+
+.banner{
+    background-color: #E7E7EA;
+    height: 28.33rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.77rem;
+}
+.banner > img{
+    width: 38.05rem;
+    height: 28.33rem;
+    mix-blend-mode: darken;
+    margin-left: 9rem;
+    position: relative;
+}
+.bannerContainer{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 44.5rem;
+}
+h1{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 8rem;
+    font-family: 'Nunito';
+}
+#thin{
+    font-size: 5rem;
+    font-weight: 300;
+    line-height: 100%;
+    font-family: 'Nunito';
+}
+.bannerContainer > p{
+    font-size: 1.385rem;
+    font-weight: 700;
+    line-height: 100%;
+    color: #005CFF;
+    text-transform: uppercase;
+    text-align: center;
+}
+#items{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 100%;
+    padding-top: .66rem;
+    letter-spacing: .38rem;
+    font-family: 'Nunito';
+}
+#coupon{
+    font-size: 3.2rem;
+    padding: 1rem;
+    font-family: 'Nunito';
+}
+
+/*PRODUCTS*/
+
+.cardsTitle{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3.55rem 0 1.05rem 0;
+}
+.cardsTitle > #titleLarge{
+    font-weight: 700;
+    font-size: 1.11rem;
+}    
+.cardsTitle > p{
+    font-weight: 700;
+    font-size: .77rem;
+}
+.cards{
+    width: 12.22rem;
+    padding: 0 0 2.77rem 0;
+    display: flex;
+    flex-direction: row;
+    gap: .94rem;
+}
+.card{
+    border: .05rem solid #DDDDDD;
+    border-radius: .55rem;
+    padding: .33rem;
+    position: relative;
+}
+.card > img{
+    width: 11.33rem;
+    height: 11.33rem;
+}
+#newIcon{
+    position: absolute;
+    top: .44rem;
+    left: .44rem;
+}
+.arrowLeft{
+    position: absolute;
+    top: 10rem;
+    left: -1.15rem;
+}
+.arrowRight{
+    position: absolute;
+    top: 10rem;
+    left: 11rem;
+}
+.card > h3{
+    font-weight: 400;
+    font-size: .77rem;
+    text-transform: capitalize;
+    width: 11.33rem;
+    height: 2.16rem;
+    text-align: center;
+}
+.prices{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    margin: .22rem 0 .22rem 0;
+}
+.oldPrice{
+    text-decoration: line-through;
+    font-size: .66rem;
+    font-weight: 400;
+}
+.newPrice{
+    font-size: .88rem;
+    font-weight: 700;
+}
+.discountButton{
+    background-color: #5EC0BE;
+    color: #FFFFFF;
+    font-size: .61rem;
+    font-weight: 700;
+    line-height: .66rem;
+    text-decoration: underline;
+    width: 3.55rem;
+    height: 1.11rem;
+    border: 0;
+    border-radius: .22rem;
+    padding: .22rem .44rem;
+    margin-left: .44rem;
+    cursor: pointer;
+}
+.financing{
+    font-size: .66rem;
+    font-weight: 400;
+}
+.financingBold{
+    font-size: .66rem;
+    font-weight: 700;
+}
+.shopButton{
+    background-color: #005CFF;
+    color: #FFFFFF;
+    width: 11.33rem;
+    height: 2.22rem;
+    border: 0;
+    border-radius:.44rem;
+    margin-top: .88rem;
+    font-size: .88rem;
+    font-weight: 700;
+    line-height: 1.11rem;
+}   
+
+/*MAIN
+-POST 01*/
+
+.post{
+    display: flex;
+    flex-direction: row;
+    padding: 2.55rem 12rem 0 12rem;
+}
+.post > img{
+    width:36.2rem;
+    height:41.5rem;
+}
+.text{
+    padding: 5.86rem 0 5.86rem 2rem;
+}
+.text > h3{
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+}
+.text > p{
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: .8rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.05rem;
+    margin-top: 1.22rem;
+}
+
+/*POST 02*/
+.post-02{
+    display: flex;
+    flex-direction: row;
+    padding: 2.27rem 12rem 2.77rem 12rem;
+    background-color: #DEDEDE;
+    margin: 3rem 0 2.55rem 0;
+}
+.post-02 > .list{
+    padding: 6.75rem 2.72rem 5rem 0;
+    height: 40.45rem;
+}
+.list h3{
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.list > ul > li{
+    list-style-type: none;
+    font-family: 'Nunito';
+    font-weight: 400;
+    font-size: .78rem;
+    line-height: 1.4rem;
+    letter-spacing: 0.05rem;
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+li > img{
+    width:5rem;
+    height:5rem; 
+    margin-right: 1.11rem;
+}
+.post-02 > img{
+    width: 36.22rem;
+    height: 40.45rem;
+}
+
+/*CONTACT*/
+
+.contact{
+    background-image: url(images/contact-img.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 36.66rem;
+    padding-top: 15.5rem;
+    margin-top: .78rem;
+}
+.contact > h3{
+    background-color: #005CFF;
+    color: #FFFFFF;
+    padding: 2rem 0;
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+/*NEWSLETTER
+- TITLE*/
+h4{
+    font-weight: 700;
+    font-size: 1.11rem;
+    line-height: 1rem;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 3.55rem;
+}
+h4 > #blue{
+    color: #005CFF;
+    font-weight: 700;
+    font-size: 1.11rem;
+    line-height: 1rem;
+    letter-spacing: 0;
+    text-align: center;
+}
+/*FORM BOX*/
+#newsletter{
+    background-color: #DEDEDE;
+    margin: 1.33rem 0 2.22rem 0;
+    display: flex;
+    align-items: center;
+    padding: 3.55rem 6.38rem 3.55rem 6.38rem;
+    border: 0;
+    border-radius: .44rem;
+}
+input[type="text"] {
+    border: 0;
+    border-radius: .44rem;
+    padding: .83rem 0 .85rem 1.33rem;
+    margin-right: 1.33rem;
+    outline: none;
+}
+input[type="checkbox"] {
+    width: .88rem;
+    height: .88rem;
+    border: .05rem solid #DEDEDE;
+    border-radius: .22rem;
+    border-width: .05rem;
+}
+.checkbox > h5{
+    font-size: .66rem;
+    font-weight: 700;
+    color: #656565;
+    display: inline;
+    margin:.88rem 1.33rem .88rem .44rem;
+}
+h5 > #politics{
+    font-size: .66rem;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.baseButton {
+    background-color: #005CFF;
+    color: #FFFFFF;
+    border: 0;
+    border-radius:.44rem;
+    padding: .77rem 1.33rem;
+    font-size: .88rem;
+    font-weight: 700;
+    line-height: 1.11rem;
+}
+/*FOOTER*/
+
+.media{
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 6.11rem;
+    padding: 2.55rem 10rem 3.55rem 13rem;
+}
+.logoMedia{
+    padding: 3.55rem 0 0 1.77rem;
+}
+.media > ul{
+    list-style: none;
+}
+.media > ul > li > h4{
+    font-weight: 700;
+    font-size: .77rem;
+    line-height: 1rem;
+    text-align: start;    
+    padding-bottom: .61rem;
+}
+.media > ul > li{
+    font-weight: 400;
+    font-size: .77rem;
+    line-height: 1.5rem;
+}
+.bold{
+    font-weight: 700;
+    font-size: .77rem;
+    line-height: 1rem;
+}
+.media > ul > li > h5{
+    font-weight: 400;
+    font-size: .66rem;
+    line-height: 1.22rem;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10.77rem;
+    align-items: center;
+    margin-top: 2.22rem;
+}
+.payments{
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 25rem 2.55rem 25rem;
+}
+
+/*COPYRIGHT*/
+
+#rights > p{
+    text-align: center;
+    font-weight: 400;
+    font-size: .66rem;
+    line-height: 1.11rem;
+    padding: 2.22rem 12rem; 
+}
+#partners{
+    text-align: center;
+    padding: 0 33.5rem 3.5rem 33.5rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 3.18rem;
+    height: 0.56rem;
+}
+
+/*---------------------------------TELA MOBILE ----------------------------------------------------------------------*/
+
+@media (max-width: 400px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container{
+        margin: 0 1.2rem;
+    }
+    .hide{
+        display: none;
+    }
+    
+    /*HEADER*/
+    
+    .frame{
+        height: 2.44rem;
+        padding: .22rem 2rem .22rem 2rem;
+        text-align: center;
+    }
+    .searchMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 1.24rem;
+    }
+    #searchForm{
+        width: 20.05rem;
+        padding: .1rem 1rem .1rem 1.3rem;
+        margin: 1.52rem 0 0 0;
+        align-items: center;
+    }
+    #user{
+        display: none;
+    }
+    nav > ul > li{
+        display:none;
+    }
+    #cart{
+        display: none;
+    }
+    .searchMenu > p{
+        display: none;
+    }
+
+    /*BANNER*/
+
+    .banner{
+        background-color: #E7E7EA;
+        height: 17rem;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+    .banner > img{
+        height: 17rem;
+        mix-blend-mode: darken;  
+        margin-left: -15.5rem;
+   }
+    .bannerContainer{
+        padding: 3.94rem 2.11rem 3.94rem 12rem;
+        height: 17rem;
+        display: flex;
+        left: 0;
+    }
+    h1{
+        font-size: 2.22rem;
+        line-height: 2.22rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+    }
+    #thin{
+        font-size: 2.22rem;
+        line-height: 2.22rem;
+    }
+    #items{
+        font-size: .66rem;
+        letter-spacing: 0;
+        margin-left: .8rem;
+        width: 7.72rem;
+    }
+    #coupon{
+        font-size: 1.77rem;
+        padding: 1rem;
+    }
+
+    /*PRODUCTS*/
+
+    .cardsTitle{
+        padding: 3.11rem 0 1.05rem 0;
+    }
+    .cardsTitle > #titleLarge{
+        font-size: .88rem;
+        text-decoration: none;
+    }    
+    .cardsTitle > p{
+        font-size: .77rem;
+        text-decoration: underline;
+    }
+    .cards{
+        margin: 0 .88rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width:auto;
+        padding-bottom: 0;
+        gap: .55rem;
+    }
+    .card > img{
+        width: 8.77rem;
+        height: 8.77rem;
+    }
+    #newIcon{
+        position: absolute;
+        top: .44rem;
+        left: .44rem;
+    }
+    .card > h3{
+        font-weight: 700;
+        font-size: .66rem;
+        text-transform: capitalize;
+        width: 8.77rem;
+        height: 2.16rem;
+        line-height: 100%;
+        text-align: center;
+    }
+    .prices{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: .66rem;
+    }
+    .shopButton{
+        background-color: #005CFF;
+        color: #FFFFFF;
+        width: 8.77rem;
+        height: 2.22rem;
+        border: 0;
+        border-radius:.44rem;
+        margin-top: .44rem;
+    }   
+        /*MAIN
+    -POST 01*/
+
+    .post{
+        display: flex;
+        flex-direction: column;
+        margin: 3.11rem 0 2.66rem 0;
+        padding: 0;
+    }
+    .post > img{
+        max-width: 100%;
+        height: auto;
+    }
+    .text{
+        padding: 2.11rem 1.33rem 0 1.33rem;        
+        margin: 0;
+    }
+    .text > h3{
+        font-family: 'Nunito';
+        font-weight: 700;
+        font-size: 1.33rem;
+    }
+    .text > p{
+        font-family: 'Nunito';
+        font-weight: 400;
+        font-size: .7rem;
+        margin-top: 1rem;
+    }
+
+    /*POST 02*/
+
+    .post-02{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 1.5rem 1.22rem 0 1.22rem;
+        margin: 0;
+        width: 100%;
+        height:auto;
+        background-color: #DEDEDE;
+    }
+    .post-02 > .list{
+        padding: 0;
+        height:auto;
+    }
+    .post-02 > img{
+        max-width: 100%;
+        height: auto;
+    }
+    .list h3{
+        font-family: 'Nunito';
+        font-size: 1.11rem;
+        padding: 1.16rem 1rem 0 1rem;
+    }
+    .list > ul > li{
+        list-style-type: none;
+        font-family: 'Nunito';
+        font-weight: 400;
+        font-size: .78rem;
+        line-height: 1.4rem;
+        letter-spacing: 0.05rem;
+        display: flex;
+        align-items: center;
+        margin: 2rem 0 1.55rem 0;
+    }
+    li > img{
+        width:3.33rem;
+        height:3.33rem; 
+        margin-right: .77rem;
+    }
+
+    /*CONTACT*/
+
+    .contact{
+        background-image: url(images/contact-mobile-img.svg);
+        background-repeat: no-repeat;
+        margin-top: 0;        
+        width: 21.66rem;
+        height: 24.94rem;
+        padding-top: 10.47rem;
+    }
+    .contact > h3{
+        background-color: #005CFF;
+        color: #FFFFFF;
+        padding: 1rem 2rem;
+        font-family: Nunito;
+        font-weight: 600;
+        font-size: .88rem;
+        line-height: 1.4rem;
+        letter-spacing: 0;
+        text-align: center;
+        vertical-align: middle;
+    }
+    /*NEWSLETTER
+    - TITLE*/
+    h4{
+        font-size: .88rem;
+        text-align: center;
+        margin-top: 3.38rem;
+    }
+    h4 > #blue{
+        color: #005CFF;
+        font-size: .88rem;
+        text-align: center;
+        margin-top: 3.38rem;
+    }
+    /*FORM BOX*/
+    #newsletter{
+        background-color: #DEDEDE;
+        width: 19.88rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2.11rem .88rem;
+    }
+    input[type="text"] {
+        width: 18.11rem;
+        height: 2.66rem;
+        margin: 0 .88rem .88rem .88rem;
+        outline: none;
+    }
+    .checkbox {
+        display: flex;
+        flex-direction: row;
+        border: .05rem solid #DEDEDE;
+        padding: .88rem 1rem;
+    }
+    input[type="checkbox"] {
+        margin-right: .44rem;
+    }
+    .checkbox > h5{
+        font-size: .66rem;
+        font-weight: 700;
+        color: #656565;
+        margin: 0;
+    }
+    h5 > #politics{
+        font-size: .66rem;
+        font-weight: 700;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .baseButton {
+        background-color: #005CFF;
+        color: #FFFFFF;
+        width: 18.11rem
+    }
+    .baseButton:hover{
+        background-color: #0244b7;
+    }
+    /*FOOTER*/
+
+    .media{
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 .88rem 0 .88rem;
+        gap: 1rem;
+    }
+    .logoMedia{
+        padding: 2.22rem 4.56rem;
+    }
+    .media > ul{
+        list-style: none;
+        padding-top: 2.66rem
+    }
+    .media > ul > li > h4{
+        font-weight: 700;
+        font-size: .77rem;
+        line-height: 1rem;
+        text-align: start;    
+        padding-bottom: .61rem;
+    }
+    .media > ul > li{
+        font-weight: 400;
+        font-size: .77rem;
+        line-height: 1.5rem;
+    }
+    .bold{
+        font-weight: 700;
+        font-size: .77rem;
+        line-height: 1rem;
+    }
+    .media > ul > li > h5{
+        font-weight: 400;
+        font-size: .66rem;
+        line-height: 1.22rem;
+    }
+    .logos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2.22rem;
+    }
+    .payments{
+        background-color: #F5F5F5;
+        display: grid;
+        
+        padding: 2.66rem 28.22rem;
+    }
+
+    /*COPYRIGHT*/
+
+    #rights > p{
+        text-align: center;
+        font-weight: 400;
+        font-size: .66rem;
+        line-height: 1.11rem;
+        padding: 2.22rem .88rem; 
+    }
+    #partners{
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 .88rem .85rem .88rem;
+}
