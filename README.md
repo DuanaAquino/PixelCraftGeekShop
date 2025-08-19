@@ -1,2 +1,2 @@
-# PoxelCraftGeekShop
+# PixelCraftGeekShop
 e-commerce page created for a fictional Geek Online Store
