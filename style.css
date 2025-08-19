@@ -110,7 +110,6 @@ li > i{
 }
 .banner > img{
     width: 100%;
-    position: relative;
 }
 .bannerContainer{
      position: absolute;
@@ -750,6 +749,10 @@ h5 > #politics{
         align-items: center;
         padding-top: 1.24rem;
     }
+    #searchBar{
+        font-size: .77rem;
+        margin: .2rem 0 0 -1rem;
+    }
     #searchForm{
         width: 20.05rem;
         padding: .1rem 1rem .1rem 1.3rem;
@@ -772,7 +775,8 @@ h5 > #politics{
     /*BANNER*/
 
     .banner{
-        background-color: #E7E7EA;
+        background-image: url(./images/banner4.jpg);
+        background-size: cover;
         height: 17rem;
         display: flex;
         flex-direction: row;
@@ -781,8 +785,7 @@ h5 > #politics{
     }
     .banner > img{
         height: 17rem;
-        mix-blend-mode: darken; 
-        position: absolute;
+        position: relative;
         right: .5rem;
    }
     .bannerContainer{
@@ -793,26 +796,28 @@ h5 > #politics{
         left: 0;
     }
     h1{
-        font-size: 2.22rem;
-        line-height: 2.22rem;
+        font-size: 1.6rem;
         display: flex;
         flex-direction: column;
-        text-align: center;
-        margin: 0;
+        justify-content: center;
+        position: absolute;
+        top: -17.5rem;
+        left: 7.5rem;
     }
     #thin{
-        font-size: 2.22rem;
-        line-height: 2.22rem;
+        font-size: 2rem;
     }
     #items{
         font-size: .66rem;
         letter-spacing: 0;
         margin-left: .8rem;
         width: 7.72rem;
+        display: none;
     }
     #coupon{
         font-size: 1.77rem;
         padding: 1rem;
+        display: none;
     }
 
     /*PRODUCTS*/
@@ -821,11 +826,11 @@ h5 > #politics{
         padding: 3.11rem 0 1.05rem 0;
     }
     .cardsTitle > #titleLarge{
-        font-size: .88rem;
+        font-size: .77rem;
         text-decoration: none;
     }    
     .cardsTitle > p{
-        font-size: .77rem;
+        font-size: .5rem;
         text-decoration: underline;
     }
     .cardsContainer{
@@ -840,6 +845,9 @@ h5 > #politics{
     .card > img{
         width: 8.77rem;
         height: 8.77rem;
+    }
+    .financing > p{
+        font-size: .4rem;
     }
     #newIcon{
         position: absolute;
@@ -862,7 +870,7 @@ h5 > #politics{
         margin-top: .66rem;
     }
     .shopButton{
-        background-color: #005CFF;
+        background-color: #6C3EBE;
         color: #FFFFFF;
         width: 8.77rem;
         height: 2.22rem;
@@ -917,13 +925,13 @@ h5 > #politics{
         height: auto;
     }
     .list h3{
-        font-family: 'Nunito';
+        font-family: 'Orbitron';
         font-size: 1.11rem;
         padding: 1.16rem 1rem 0 1rem;
     }
     .list > ul > li{
         list-style-type: none;
-        font-family: 'Nunito';
+        font-family: 'Poppins';
         font-weight: 400;
         font-size: .78rem;
         line-height: 1.4rem;
@@ -941,21 +949,22 @@ h5 > #politics{
     /*CONTACT*/
 
     .contact{
-        background-image: url(images/contact-mobile-img.svg);
+        background-image: url(images/banner3.jpg);
         background-repeat: no-repeat;
         margin-top: 0; 
         background-size: cover;
         height: 24.94rem;
-        padding-top: 10.47rem;
+        padding-top: 8rem;
     }
     .contact > h3{
         color: #F2F2F2;
-        padding: 1rem 2rem;
-        font-family: Nunito;
+        background-color: #1a1a1a;
+        padding: 1rem;
+        font-family: 'Orbitron';
         font-weight: 600;
-        font-size: .88rem;
-        text-align: center;
-        vertical-align: middle;
+        font-size: 1.5rem;
+        margin-top: -4rem;
+        margin: 0;
     }
     /*NEWSLETTER
     - TITLE*/
@@ -972,7 +981,7 @@ h5 > #politics{
     }
     /*FORM BOX*/
     #newsletter{
-        background-color: #DEDEDE;
+        background-color: #6C3EBE;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -987,7 +996,7 @@ h5 > #politics{
     .checkbox {
         display: flex;
         flex-direction: row;
-        border: .05rem solid #DEDEDE;
+        border: none;
         padding: .88rem 1rem;
     }
     input[type="checkbox"] {
@@ -1014,43 +1023,53 @@ h5 > #politics{
         background-color: #3cd3ff;
     }
     /*FOOTER*/
-
+    footer{
+        background-color:#1A1A1A;
+    }
     .media{
-        background-color: #F2F2F2;
+        background-color: #1A1A1A;
         display: flex;
         flex-direction: column;
-        text-align: center;
-        padding: 0 .88rem 0 .88rem;
+        padding: 0 6rem 1rem 9rem;
+        margin-left: 1rem;
         gap: 1rem;
+        align-self: center;
     }
     .logoMedia{
-        padding: 2.22rem 4.56rem;
+        padding: 0;
+        align-self: center;
     }
     .media > ul{
         list-style: none;
-        padding-top: 2.66rem
+        padding-top: -30rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: transparent;
     }
     .media > ul > li > h4{
         font-weight: 700;
-        font-size: .77rem;
-        line-height: 1rem;
-        text-align: start;    
-        padding-bottom: .61rem;
+        font-size: .5rem;
+        text-align: center;  
+        padding: 0;
+        margin-top: 1rem;
     }
     .media > ul > li{
         font-weight: 400;
-        font-size: .77rem;
-        line-height: 1.5rem;
+        font-size: .5rem;
+        line-height: 1rem;
+        text-align: center;
     }
     .bold{
         font-weight: 700;
-        font-size: .77rem;
+        font-size: .5rem;
         line-height: 1rem;
     }
     .media > ul > li > h5{
         font-weight: 400;
-        font-size: .66rem;
-        line-height: 1.22rem;
+        font-size: .5rem;
+        line-height: 1rem;
     }
     .logos{
         display: flex;
@@ -1060,7 +1079,7 @@ h5 > #politics{
         margin-top: 2.22rem;
     }
     .payments{
-        background-color: #F5F5F5;
+        background-color: #1A1A1A;
         display: grid;
         grid-template-columns: repeat(9,1fr);
         grid-template-rows: repeat(3,1fr);

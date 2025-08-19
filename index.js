@@ -8,7 +8,7 @@ carrousel1LeftArrow.style.display = "none";
 
 function carrousel1ScrollRight() {
     
-    cardTrack1.scrollLeft += 100;
+    cardTrack1.scrollLeft += 500;
     
     
     carrousel1LeftArrow.style.display = "block";
@@ -17,7 +17,7 @@ function carrousel1ScrollRight() {
 
 function carrousel1ScrollLeft() {
     
-    cardTrack1.scrollLeft -= 100;
+    cardTrack1.scrollLeft -= 500;
     
    
     carrousel1RightArrow.style.display = "block";
@@ -35,7 +35,7 @@ carrousel2LeftArrow.style.display = "none";
 
 function carrousel2ScrollRight() {
     
-    cardTrack2.scrollLeft += 100;
+    cardTrack2.scrollLeft += 500;
     
     
     carrousel2LeftArrow.style.display = "block";
@@ -44,7 +44,7 @@ function carrousel2ScrollRight() {
 
 function carrousel2ScrollLeft() {
     
-    cardTrack2.scrollLeft -= 100;
+    cardTrack2.scrollLeft -= 500;
     
    
     carrousel2RightArrow.style.display = "block";
