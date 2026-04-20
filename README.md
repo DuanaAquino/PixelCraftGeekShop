@@ -1,4 +1,4 @@
-##🛍️ PixelCraft | Geek E-commerce UI
+##🛍️ PixelCraft | Geek E-commerce Development
 
 <img width="1883" height="863" alt="image" src="https://github.com/user-attachments/assets/584f4f6e-1575-4848-9da7-17044216883f" />
 
